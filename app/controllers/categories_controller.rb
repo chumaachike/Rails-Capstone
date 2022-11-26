@@ -8,6 +8,7 @@ class CategoriesController < ApplicationController
   def new
     @category = Category.new
   end
+
   def create
     @category = Category.new(category_params)
     @category.user = current_user
@@ -21,10 +22,9 @@ class CategoriesController < ApplicationController
     end
   end
 
-  private 
+  private
 
   def category_params
     params.require(:category).permit(:customer_id, :name, :icon)
   end
-
 end

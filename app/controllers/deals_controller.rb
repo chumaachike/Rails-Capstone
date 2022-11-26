@@ -25,18 +25,17 @@ class DealsController < ApplicationController
     respond_to do |format|
       if @deal.save
         format.html { redirect_to category_deals_url(@category), notice: 'Transaction was successfully created.' }
-        
+
       else
         format.html { redirect_to category_deals_url(@category), notice: 'Unprocessable transaction.' }
-        
+
       end
     end
   end
 
-  private 
-  
+  private
+
   def deal_params
     params.require(:deal).permit(:author_id, :name, :amount, :category_id, category_ids: [])
   end
-
 end

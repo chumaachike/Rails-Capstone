@@ -1,6 +1,6 @@
 class Deal < ApplicationRecord
   validates :name, :amount, :author, presence: true
-  validates :amount, numericality: {greater_than: 0}
+  validates :amount, numericality: { greater_than: 0 }
   belongs_to :author, class_name: 'User'
   has_and_belongs_to_many :categories
 end
