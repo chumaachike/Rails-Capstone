@@ -76,7 +76,7 @@ This application allows the customer to:
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://app.netlify.com/sites/peaceful-syrniki-b270a6/overview)
+- [Live Demo Link](https://rails-capstone-production.up.railway.app/)
 
 - [Project features video](https://www.loom.com/share/cf51a7edbff847a8a0d13cdf961809db)
 
